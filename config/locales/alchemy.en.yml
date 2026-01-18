@@ -1,0 +1,4 @@
+en:
+  alchemy:
+    modules:
+      errors: Errors

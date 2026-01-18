@@ -12,7 +12,7 @@ Rails.application.config.to_prepare do
       name: "modules.errors",
       controller: "/alchemy/admin/errors",
       action: "index",
-      icon: "stack"
+      icon: "bug"
     }
   })
 end

@@ -22,7 +22,7 @@ $ rails generate solid_errors:install
 ```
 
 > [!NOTE]
-> This will necessary configuration for production. The gem will only show the menu item if Solid Errors is enabled in the environment.
+> This will add all necessary configurations for production. The gem will only show the menu item if Solid Errors is enabled in the environment.
 > If you want to use this gem in development, you have to add the configuration manually to your `config/environments/development.rb`.
 
 ## Release a new version

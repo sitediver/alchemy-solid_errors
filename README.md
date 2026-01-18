@@ -14,6 +14,17 @@ Add the gem to your Gemfile and restart the application.
 $ bundle add alchemy-solid_errors
 ```
 
+Follow the installation instructions of [Solid Errors](https://github.com/fractaledmind/solid_errors?tab=readme-ov-file#installation). 
+You have to run the Solid Errors generator:
+
+```shell
+$ rails generate solid_errors:install
+```
+
+> [!NOTE]
+> This will necessary configuration for production. The gem will only show the menu item if Solid Errors is enabled in the environment.
+> If you want to use this gem in development, you have to add the configuration manually to your `config/environments/development.rb`.
+
 ## Release a new version
 
 First, bump the version with [gem-release](https://bundler.io/guides/creating_gem.html#releasing-the-gem):

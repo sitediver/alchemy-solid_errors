@@ -21,8 +21,8 @@ Gem::Specification.new do |spec|
     Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
   end
 
-  spec.add_dependency "rails", ">= 7.2.0", "< 8.1"
-  spec.add_dependency "alchemy_cms", ">= 7.4.0", "< 8.1"
+  spec.add_dependency "rails", ">= 7.2.0", "< 9.0"
+  spec.add_dependency "alchemy_cms", ">= 7.4.0", "< 8.2"
   spec.add_dependency "solid_errors", ">= 0.7", "< 1.0"
 
   spec.add_development_dependency "capybara", ["~> 3.0"]

@@ -4,10 +4,13 @@ gem "puma"
 gem "sqlite3"
 
 alchemy_cms_version = ENV.fetch("ALCHEMY_CMS_VERSION", "8.0")
-if alchemy_cms_version == "8.0"
-  gem "alchemy_cms", github: "AlchemyCMS/alchemy_cms", branch: "8.0-stable"
-  gem "alchemy-devise", github: "AlchemyCMS/alchemy-devise", branch: "main"
+if alchemy_cms_version.start_with?("8.")
   gem "propshaft"
+end
+
+if alchemy_cms_version == "8.1"
+  gem "alchemy_cms", github: "AlchemyCMS/alchemy_cms", branch: "8.1-stable"
+  gem "alchemy-devise", github: "AlchemyCMS/alchemy-devise", branch: "main"
 else
   gem "alchemy_cms", "~> #{alchemy_cms_version}"
   gem "alchemy-devise", "~> #{alchemy_cms_version}"

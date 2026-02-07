@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.3.0](https://github.com/sitediver/alchemy-solid_errors/tree/v0.3.0) (2026-02-07)
+
+[Full Changelog](https://github.com/sitediver/alchemy-solid_errors/compare/v0.2.0...v0.3.0)
+
+**Merged pull requests:**
+
+- Allow Alchemy 8.1 and Rails 8.1 [\#3](https://github.com/sitediver/alchemy-solid_errors/pull/3) ([kulturbande](https://github.com/kulturbande))
+
 ## [v0.2.0](https://github.com/sitediver/alchemy-solid_errors/tree/v0.2.0) (2026-01-18)
 
 [Full Changelog](https://github.com/sitediver/alchemy-solid_errors/compare/v0.1.1...v0.2.0)

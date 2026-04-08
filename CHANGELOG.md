@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.4.0](https://github.com/sitediver/alchemy-solid_errors/tree/v0.4.0) (2026-04-08)
+
+[Full Changelog](https://github.com/sitediver/alchemy-solid_errors/compare/v0.3.0...v0.4.0)
+
+**Merged pull requests:**
+
+- Allow AlchemyCMS v8.2.0 [\#4](https://github.com/sitediver/alchemy-solid_errors/pull/4) ([kulturbande](https://github.com/kulturbande))
+
 ## [v0.3.0](https://github.com/sitediver/alchemy-solid_errors/tree/v0.3.0) (2026-02-07)
 
 [Full Changelog](https://github.com/sitediver/alchemy-solid_errors/compare/v0.2.0...v0.3.0)

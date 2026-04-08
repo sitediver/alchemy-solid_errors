@@ -8,13 +8,9 @@ if alchemy_cms_version.start_with?("8.")
   gem "propshaft"
 end
 
-if alchemy_cms_version == "8.1"
-  gem "alchemy_cms", github: "AlchemyCMS/alchemy_cms", branch: "8.1-stable"
-  gem "alchemy-devise", github: "AlchemyCMS/alchemy-devise", branch: "main"
-else
-  gem "alchemy_cms", "~> #{alchemy_cms_version}"
-  gem "alchemy-devise", "~> #{alchemy_cms_version}"
-end
+gem "alchemy_cms", "~> #{alchemy_cms_version}"
+devise_version = (Gem::Version.new(alchemy_cms_version) >= Gem::Version.new("8.0")) ? "8.0" : alchemy_cms_version
+gem "alchemy-devise", "~> #{devise_version}"
 
 # Specify your gem's dependencies in alchemy-solid_errors.gemspec.
 gemspec

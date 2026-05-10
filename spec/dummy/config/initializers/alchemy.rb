@@ -1,5 +1,3 @@
-return unless Alchemy::VERSION.start_with?("8.")
-
 Alchemy.configure do |config|
   # == This is the global Alchemy configuration file
   #
@@ -51,8 +49,8 @@ Alchemy.configure do |config|
   # config.preview = {
   #   host: https://www.my-static-site.com
   #   auth:
-  #     username: <%= ENV["BASIC_AUTH_USERNAME"] %%>
-  #     password: <%= ENV["BASIC_AUTH_PASSWORD"] %%>
+  #     username: <%= ENV["BASIC_AUTH_USERNAME"] %>
+  #     password: <%= ENV["BASIC_AUTH_PASSWORD"] %>
   # }
   # Preview config per site is supported as well.
   #
@@ -60,8 +58,8 @@ Alchemy.configure do |config|
   #   My site name:
   #     host: https://www.my-static-site.com
   #     auth:
-  #       username: <%= ENV["BASIC_AUTH_USERNAME"] %%>
-  #       password: <%= ENV["BASIC_AUTH_PASSWORD"] %%>
+  #       username: <%= ENV["BASIC_AUTH_USERNAME"] %>
+  #       password: <%= ENV["BASIC_AUTH_PASSWORD"] %>
   # }
 
   # === Picture rendering settings

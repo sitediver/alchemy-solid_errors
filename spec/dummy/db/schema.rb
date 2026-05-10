@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_11_15_150241) do
+ActiveRecord::Schema[7.2].define(version: 2026_05_10_133913) do
   create_table "alchemy_attachments", force: :cascade do |t|
     t.string "name"
     t.string "file_name"
@@ -40,11 +40,14 @@ ActiveRecord::Schema[7.2].define(version: 2025_11_15_150241) do
     t.integer "parent_element_id"
     t.boolean "fixed", default: false, null: false
     t.integer "page_version_id", null: false
+    t.datetime "public_on"
+    t.datetime "public_until"
     t.index ["creator_id"], name: "index_alchemy_elements_on_creator_id"
     t.index ["fixed"], name: "index_alchemy_elements_on_fixed"
     t.index ["page_version_id", "parent_element_id"], name: "idx_alchemy_elements_on_page_version_id_and_parent_element_id"
     t.index ["page_version_id", "position"], name: "idx_alchemy_elements_on_page_version_id_and_position"
     t.index ["page_version_id"], name: "index_alchemy_elements_on_page_version_id"
+    t.index ["public_on", "public_until"], name: "index_alchemy_elements_on_public_on_and_public_until"
     t.index ["updater_id"], name: "index_alchemy_elements_on_updater_id"
   end
 
@@ -147,6 +150,9 @@ ActiveRecord::Schema[7.2].define(version: 2025_11_15_150241) do
     t.datetime "public_until", precision: nil
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "title"
+    t.text "meta_description"
+    t.text "meta_keywords"
     t.index ["page_id"], name: "index_alchemy_page_versions_on_page_id"
     t.index ["public_on", "public_until"], name: "index_alchemy_page_versions_on_public_on_and_public_until"
   end
@@ -261,6 +267,8 @@ ActiveRecord::Schema[7.2].define(version: 2025_11_15_150241) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at", precision: nil
     t.string "alchemy_roles", default: "member"
+    t.datetime "remember_created_at"
+    t.string "timezone"
     t.index ["alchemy_roles"], name: "index_alchemy_users_on_alchemy_roles"
     t.index ["email"], name: "index_alchemy_users_on_email", unique: true
     t.index ["firstname"], name: "index_alchemy_users_on_firstname"

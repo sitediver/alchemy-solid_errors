@@ -1,5 +1,14 @@
 # Changelog
 
+## [v0.5.0](https://github.com/sitediver/alchemy-solid_errors/tree/v0.5.0) (2026-05-10)
+
+[Full Changelog](https://github.com/sitediver/alchemy-solid_errors/compare/v0.4.0...v0.5.0)
+
+**Merged pull requests:**
+
+- Fix Alchemy deprecation warnings [\#6](https://github.com/sitediver/alchemy-solid_errors/pull/6) ([kulturbande](https://github.com/kulturbande))
+- Require at least AlchemyCMS v8.2.0 [\#5](https://github.com/sitediver/alchemy-solid_errors/pull/5) ([kulturbande](https://github.com/kulturbande))
+
 ## [v0.4.0](https://github.com/sitediver/alchemy-solid_errors/tree/v0.4.0) (2026-04-08)
 
 [Full Changelog](https://github.com/sitediver/alchemy-solid_errors/compare/v0.3.0...v0.4.0)

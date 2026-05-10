@@ -1,10 +1,10 @@
+Alchemy.configure do |config|
+  config.abilities.add("Alchemy::SolidErrors::Ability")
+  config.admin_stylesheets << "alchemy/solid_errors/alchemy-admin.css"
+end
+
 Rails.application.config.to_prepare do
-  require "alchemy/solid_errors/ability"
-
   if SolidErrors.connects_to.present?
-    Alchemy.register_ability(Alchemy::SolidErrors::Ability)
-    Alchemy.admin_stylesheets << "alchemy/solid_errors/alchemy-admin.css"
-
     Alchemy::Modules.register_module({
       name: "errors",
       engine_name: "alchemy",

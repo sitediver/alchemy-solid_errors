@@ -15,10 +15,10 @@ jobs:
           - alchemy_cms: "8.2"
             rails: "7.2"
             ruby: "3.3"
-          - alchemy_cms: "8.2"
+          - alchemy_cms: "8.3"
             rails: "8.0"
             ruby: "3.4"
-          - alchemy_cms: "8.2"
+          - alchemy_cms: "8.3"
             rails: "8.1"
             ruby: "3.4"
     env:

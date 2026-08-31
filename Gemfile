@@ -4,10 +4,11 @@ gem "puma"
 gem "sqlite3"
 gem "propshaft"
 
-alchemy_cms_version = ENV.fetch("ALCHEMY_CMS_VERSION", "8.2")
+alchemy_cms_version = ENV.fetch("ALCHEMY_CMS_VERSION", "8.3")
 
 gem "alchemy_cms", "~> #{alchemy_cms_version}"
 gem "alchemy-devise", "~> #{alchemy_cms_version}"
+gem "ruby-vips", "~> 2.0"
 
 # Specify your gem's dependencies in alchemy-solid_errors.gemspec.
 gemspec
